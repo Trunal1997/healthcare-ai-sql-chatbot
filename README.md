@@ -128,16 +128,4 @@ Show today appointments
 Show all patients from Nagpur
 ```
 
-## Interview Explanation
 
-This project is an AI-powered healthcare analytics chatbot. Non-technical healthcare users can ask questions in simple English. The backend uses an LLM to generate a safe SQL query, validates that only `SELECT` queries are allowed, executes the query on PostgreSQL, and returns the result in a conversational UI.
-
-## Safety Design
-
-The app blocks dangerous SQL operations like:
-
-```sql
-INSERT, UPDATE, DELETE, DROP, ALTER, TRUNCATE, CREATE
-```
-
-Only `SELECT` queries are executed.
